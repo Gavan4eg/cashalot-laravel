@@ -2,35 +2,35 @@
 
 # Cashalot API Laravel
 
-`Фискализация чеков в налоговой с помощью программы cashalot`
-#### Laravel 7 или выше, php8 или выше
+`Фіскалізація чеків у податковій за допомогою програми cashalot`
+#### Laravel 7 або вище, php8 або вище
 
-## Устанвока 
+## Встановлення 
 
 ```
 composer require gavan4eg/cashalotapi
 ```
-#### Опубликовать config (cashalot.php)
+#### Опублікувати config (cashalot.php)
 
 ```
 php artisan vendor:publish
 ```
 
-#### Остальное
+#### Решта
 
-> Сертефикат .crt и приват ключ .pfx должны быть в формате base64 (https://www.base64encode.org/enc/certificate/)
+>Сертефікат .crt та приват ключ .pfx повинні бути у форматі base64 (https://www.base64encode.org/enc/certificate/)
 
->Получение сертификата для приват24 https://acsk.privatbank.ua/certificates/clients
+>Отримання сертифіката для приват24 https://acsk.privatbank.ua/certificates/clients
 
 
-## Примеры использования
+## Приклади використання
 
-`# Запросить статус рро`
+`# Запитати статус рро`
 ```php
 $cashalot = new CashalotService();
 var_dump($cashalot->transactionsRegistrarState());
 ```
-`# Успешный ответ`
+`# Успішна відповідь`
 ```
   "ShiftState" => 1
   "ShiftId" => 30709815
@@ -56,12 +56,12 @@ var_dump($cashalot->transactionsRegistrarState());
   "ErrorMessage" => null
 ```
 
-`# Открытие смены`
+`# Відкриття зміни`
 ```php
 $cashalot = new CashalotService();
 var_dump($cashalot->openShift());
 ```
-`# Успешный ответ`
+`# Успішна відповідь`
 ```
   "NumFiscal" => "1384590380"
   "NumLocal" => 288
@@ -71,15 +71,15 @@ var_dump($cashalot->openShift());
   "ErrorMessage" => null
 ```
 
-`# Закрытие смены`
+`# Закриття зміни`
 ```php
-//Формировать Z-Отчет по закартию смены true/false
+// Формувати Z-Звіт коли закритя зміни true/false
 $zrep = true;
 
 $cashalot = new CashalotService();
 var_dump($cashalot->closeShift($zrep));
 ```
-`# Успешный ответ`
+`# Успішна відповідь`
 ```
   "ZRepAutoInfo" => array:6 [
     "NumFiscal" => "1384622746"
@@ -98,7 +98,7 @@ var_dump($cashalot->closeShift($zrep));
 ]
 ```
 
-`# Создание чека`
+`# Створення чека`
 ```php
 $cashalot = new CashalotService();
 $array = $cashalot->registerCheck([
@@ -138,7 +138,7 @@ $array = $cashalot->registerCheck([
         ]);
         dd($array);
 ```
-`# Успешный ответ`
+`# Успішна відповідь`
 ```
   "QrCode" => null
   "Url" => "https://cabinet.tax.gov.ua/cashregs/check?fn=4000146829&id=1384600901&date=20230930&time=145454&sm=99.99"
