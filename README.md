@@ -1,3 +1,5 @@
+![](https://vitmark.com/wp-content/uploads/2022/02/MicrosoftTeams-image-30.png)
+
 # Cashalot API Laravel
 
 `Фискализация чеков в налоговой с помощью программы cashalot`
