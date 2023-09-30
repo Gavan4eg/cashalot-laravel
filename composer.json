@@ -1,11 +1,11 @@
 {
     "name": "gavan4eg/cashalotapi",
-    "description": "Описание вашего пакета",
+    "description": "cashalot laravel api",
     "license": "MIT",
     "authors": [
         {
-            "name": "Ваше имя",
-            "email": "ваш@email.com"
+            "name": "Alex",
+            "email": "alexdevlaravel@gmail.com"
         }
     ],
     "homepage": "https://github.com/gavan4eg/cashalotapi",
