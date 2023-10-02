@@ -6,11 +6,11 @@ use GuzzleHttp\Client;
 
 class CashalotService
 {
-    protected ?string $url = 'https://fsapi.cashalot.org.ua';
-    protected mixed $guz;
+    protected string $url = 'https://fsapi.cashalot.org.ua';
+    protected $guz;
     protected array $config;
 
-    public function __construct(?string $url = null, $guz = null)
+    public function __construct(string $url = null, $guz = null)
     {
         $this->url = $url ?: $this->url;
         $this->guz = $guz ?: new Client();
