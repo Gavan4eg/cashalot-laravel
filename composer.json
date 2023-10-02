@@ -11,10 +11,10 @@
     "homepage": "https://github.com/gavan4eg/cashalotapi",
     "keywords": ["Laravel", "CashalotApi"],
     "require": {
-        "illuminate/support": "^8|^9|^10"
+        "illuminate/support": "^6|^7|^8|^9|^10"
     },
     "require-dev": {
-        "phpunit/phpunit": "^8|^9|^10",
+        "phpunit/phpunit": "^6|^7|^8|^9|^10",
         "orchestra/testbench": "^6|^7|^8|^9|^10"
     },
     "autoload": {
