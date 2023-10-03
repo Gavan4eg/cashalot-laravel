@@ -69,9 +69,9 @@ class CashalotService
      * @param array $remove
      * @return mixed
      */
-    public function cleanUp($remove)
+    public function cleanUp()
     {
-        return $this->postRequest('Cleanup', $remove);
+        return $this->postRequest('Cleanup');
     }
 
 
