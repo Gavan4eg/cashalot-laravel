@@ -74,6 +74,16 @@ class CashalotService
         return $this->postRequest('Cleanup');
     }
 
+    /**
+     * Get Object
+     * @param array $remove
+     * @return mixed
+     */
+    public function object()
+    {
+        return $this->postRequest('Objects');
+    }
+
 
     /**
      * @param string $class

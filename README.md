@@ -25,6 +25,20 @@ php artisan vendor:publish
 
 ## Приклади використання
 
+`# Запит доступних об'єктів`
+```php
+$cashalot = new CashalotService();
+var_dump($cashalot->object());
+```
+`# Успішна відповідь`
+```
+-
+```
+
+`# Запит видаляє всі локальні дані`
+```php
+
+
 `# Запитати статус рро`
 ```php
 $cashalot = new CashalotService();
