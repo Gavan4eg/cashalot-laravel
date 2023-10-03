@@ -5,6 +5,9 @@
 ![Packagist](https://img.shields.io/packagist/dt/gavan4eg/cashalotapi)
 ![Packagist License](https://img.shields.io/packagist/l/gavan4eg/cashalotapi)
 
+
+**Контакты:**
+- Телеграм: [@phpuk](https://t.me/phpuk)
 # Cashalot API Laravel
 
 `Фіскалізація чеків у податковій за допомогою програми cashalot`
