@@ -116,6 +116,14 @@ var_dump($cashalot->closeShift($zrep));
 
 `# Створення чека`
 ```php
+// Праметри до внесення
+/**
+ * DOCSUBTYPE
+ * 1. CheckGoods - регістрація чеку
+ * 2. ServiceDeposit - службове внесеня
+ * 3. ServiceIssue - службова видача
+*/
+
 $cashalot = new CashalotService();
 $array = $cashalot->registerCheck([
             "CHECKHEAD" => [
@@ -164,6 +172,20 @@ $array = $cashalot->registerCheck([
   "Offline" => false
   "ErrorCode" => "Ok"
   "ErrorMessage" => null
+```
+
+`# Реєстрація Z-звіту`
+```php
+
+$cashalot = new CashalotService();
+var_dump($cashalot->registerZRep());
+```
+`# Успішна відповідь`
+```
+"NumFiscal" => 54321
+"NumLocal" => 12345
+"OrderDateTime" => Date 
+"Offline" => true
 ```
 
 

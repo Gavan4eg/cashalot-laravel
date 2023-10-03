@@ -59,6 +59,11 @@ class CashalotService
         return $this->postRequest('RegisterCheck', $check);
     }
 
+    public function registerZRep()
+    {
+        return $this->postRequest('RegisterZRep');
+    }
+
     /**
      * Clean
      * @param array $remove
