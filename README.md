@@ -1,5 +1,10 @@
 !['1'](https://github.com/Gavan4eg/cashalot-laravel/blob/main/art/ukraine.png)
 
+
+![Packagist Version](https://img.shields.io/packagist/v/gavan4eg/cashalotapi)
+![Packagist](https://img.shields.io/packagist/dt/gavan4eg/cashalotapi)
+![Packagist License](https://img.shields.io/packagist/l/gavan4eg/cashalotapi)
+
 # Cashalot API Laravel
 
 `Фіскалізація чеків у податковій за допомогою програми cashalot`

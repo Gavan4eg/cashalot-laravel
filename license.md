@@ -1,5 +1,5 @@
-# The license
+# MIT License
 
-Copyright (c) Author Name <author@email.com>
+Copyright (c) Telegram: t.me/phpuk <alexdevlaravel@gmail.com>
 
 ...Add your license text here...
