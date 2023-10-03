@@ -56,6 +56,22 @@ var_dump($cashalot->transactionsRegistrarState());
   "ErrorMessage" => null
 ```
 
+`# Запит видаляє всі локальні дані`
+```php
+
+$remove = true
+
+$cashalot = new CashalotService();
+var_dump($cashalot->cleanUp());
+```
+`# Успішна відповідь`
+```
+"ZRepAutoInfo": // Відомості автоматично створеного Z-звіту
+"CloseShiftAutoInfo": // Відомості автоматично створеного документу на закриття
+зміни
+```
+
+
 `# Відкриття зміни`
 ```php
 $cashalot = new CashalotService();
@@ -149,5 +165,7 @@ $array = $cashalot->registerCheck([
   "ErrorCode" => "Ok"
   "ErrorMessage" => null
 ```
+
+
 
 

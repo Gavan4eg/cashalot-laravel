@@ -59,6 +59,16 @@ class CashalotService
         return $this->postRequest('RegisterCheck', $check);
     }
 
+    /**
+     * Clean
+     * @param array $remove
+     * @return mixed
+     */
+    public function сleanUp($remove)
+    {
+        return $this->postRequest('Cleanup', $remove);
+    }
+
 
     /**
      * @param string $class
