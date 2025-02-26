@@ -9,7 +9,7 @@
 **Контакты:**
 - Телеграм: [@phpuk](https://t.me/phpuk)
 # Cashalot API Laravel
-
+`Fiscalization of checks in the tax office using the cashalot program`
 `Фіскалізація чеків у податковій за допомогою програми cashalot`
 #### Laravel 6 або вище, php7.0 або вище
 
